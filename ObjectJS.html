@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myInfo={
+            name:"Aryan ",
+            age:19,
+            isMarried:false,
+            address:{
+                streetNo:7,
+                area:"Muradnagar",
+                pincode:201206,
+                city:"Muradnagar",
+
+            },
+            course:"Btech",
+            branch:"CSE",
+            year:2025,
+        }
+        console.log(myInfo.address.city)
+        console.log(myInfo["name"]);
+
+        let keys=Object.keys(myInfo);
+        console.log(keys.length);
+        console.log(delete myInfo.name);
+        console.log(myInfo);
+
+        for(let i=0;i<keys.length;i++){
+
+            console.log("object keys are" + myInfo[keys[i]]);
+
+        }
+
+        for (let x in myInfo){
+            console.log(myInfo[x]);
+        }
+
+        let student = new Object();
+        student.name="Aryan";
+        student.age=19;
+        student.course="Btech";
+        student.address="GZB";
+        student.isMarried=false;
+
+        console.log(student.name);
+    </script>
+    
+</body>
+</html>
